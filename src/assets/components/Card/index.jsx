@@ -12,8 +12,9 @@ export default function ImgMediaCard({ name, index, image }) {
                 <CardMedia
                     component="img"
                     alt={name}
-                    height="140"
+                    height="200"
                     image={image}
+                    style={{ objectFit: "contain" }}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
@@ -25,8 +26,7 @@ export default function ImgMediaCard({ name, index, image }) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
+                    tipo 1 | tipo 2
                 </CardActions>
             </Card>
         </>
