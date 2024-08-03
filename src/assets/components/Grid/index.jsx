@@ -11,7 +11,7 @@ export default function GridContainer() {
     const resultsPerPage = 24;
 
     useEffect(() => {
-        axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000')
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=10000')
             .then((res) => {
                 setPokemon(res.data.results)
                 setTotalPages(Math.ceil(res.data.results.length / resultsPerPage));
